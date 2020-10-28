@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>apartment management</title>
+</head>
+<style type="text/css"> 
+body {
+	
+	background:#eee;
+	
+}
+.menu {
+	
+	border:1px solid #ddd;
+	width:250px;
+	height:250px;
+	float:left;
+	background:white;
+}
+.container1 {
+	
+	float: center;
+	position:relative;
+	width:23;
+
+
+}
+.container2 {
+	
+	float: center;
+	position:relative;
+	width:23%;
+
+
+}
+.container3 {
+	
+	float: center;
+	position:relative;
+	width:23%;
+
+
+}
+
+.cont {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+</style>
+<body>
+
+<div style="  padding: 10px 16px; background: azure; color: black;">
+  <h2 style="text-align: center;">Apartment Management System</h2>
+  <h3>click on house buttons</h3>
+</div>
+
+<div style="background-color: silver; top:100px; width: 35%; height: 100%;position: fixed;">
+<div class="container1">
+<div class="cont">
+<button onclick="myFunction1()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 1</b>
+</div>
+<div id="1" style="display:none;">
+<table style="width:50%;">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+<div class="cont">
+<button onclick="myFunction2()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 2</b>
+</div>
+<div id="2" style="display:none;">
+<table style="width:50%">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div style="top:100px; left: 35%; background-color: silver; position: fixed; height: 100%; width: 35%;">
+<div class="container2">
+<div class="cont">
+<button onclick="myFunction3()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 3</b>
+</div>
+<div id="3" style="display:none;">
+<table style="width:50%">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+<div class="cont">
+<button onclick="myFunction4()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 4</b>
+</div>
+<div id="4" style="display:none;">
+<table style="width:50%">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+<div style="top:100px; left: 70%; background-color: silver; position: fixed; height: 100%; width: 35%;">
+<div class="container3">
+<div class="cont">
+<button onclick="myFunction5()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 5</b>
+</div>
+<div id="5" style="display:none;">
+<table style="width:50%">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+<div class="cont">
+<button onclick="myFunction6()"><img src="hss.png" alt=""></button>
+<b style="text-align: center;">Flat no 6</b>
+</div>
+<div id="6" style="display:none;">
+<table style="width:50%">
+  <tr>
+    <td>Name Surname</td>
+  </tr>
+  <tr>
+    <td>Own property/rented</td>
+  </tr>
+  <tr>
+    <td>5555555555</td>
+  </tr>
+  <tr>
+    <td>Active</td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+<script>
+function myFunction1() {
+  var x = document.getElementById("1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+  var x = document.getElementById("3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction4() {
+  var x = document.getElementById("4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction5() {
+  var x = document.getElementById("5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction6() {
+  var x = document.getElementById("6");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</html>
